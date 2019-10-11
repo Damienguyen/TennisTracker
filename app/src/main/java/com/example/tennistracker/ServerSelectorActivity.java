@@ -7,37 +7,12 @@ import android.view.View;
 import android.widget.Button;
 
 public class ServerSelectorActivity extends AppCompatActivity {
-    Button bt1 = findViewById(R.id.button);
-    Button bt2 = findViewById(R.id.button2);
-    int i =0;
-
-    public void sendMessage(View view) {
-        Intent intent = new Intent(this, ServerSelectorActivity.class);
-
-
-        intent.putExtra("MY_Key", i);
-        startActivity(intent);
-    }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_server_selector);
-
-
-        bt1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                i = 1;
-            }
-        });
-        bt2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                i = 2;
-            }
-        });
 
 
     }
