@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tennis Tracker</string>
+    <string-array name="adversaire">
+        <item>Perf</item>
+        <item>Egal</item>
+        <item>Contre</item>
+
+    </string-array>
+</resources>

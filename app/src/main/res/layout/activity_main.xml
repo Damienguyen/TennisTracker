@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/serve2"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:text="CheckBox"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/joueur2name"
+        app:layout_constraintStart_toStartOf="@+id/serve1" />
+
+    <Button
+        android:id="@+id/bj1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="68dp"
+        android:text="J1 Gagne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joueur2name" />
+
+    <Button
+        android:id="@+id/bj2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginLeft="196dp"
+        android:text="J2 Gagne"
+        app:layout_constraintStart_toEndOf="@+id/bj1"
+        app:layout_constraintTop_toTopOf="@+id/bj1" />
+
+    <TextView
+        android:id="@+id/score1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/j1s3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/score2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/j2s3" />
+
+    <CheckBox
+        android:id="@+id/serve1"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:checked="true"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/joueur1name"
+        app:layout_constraintTop_toTopOf="@+id/joueur1name" />
+
+    <TextView
+        android:id="@+id/j2s1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/serve2"
+        app:layout_constraintStart_toStartOf="@+id/j1s1" />
+
+    <TextView
+        android:id="@+id/j1s1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/serve1"
+        app:layout_constraintTop_toTopOf="@+id/serve1" />
+
+    <TextView
+        android:id="@+id/j1s2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/j1s1"
+        app:layout_constraintTop_toTopOf="@+id/j1s1" />
+
+    <TextView
+        android:id="@+id/j2s2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/j2s1"
+        app:layout_constraintStart_toStartOf="@+id/j1s2" />
+
+    <TextView
+        android:id="@+id/j1s3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/j1s2"
+        app:layout_constraintTop_toTopOf="@+id/j1s2" />
+
+    <TextView
+        android:id="@+id/j2s3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/j2s2"
+        app:layout_constraintStart_toStartOf="@+id/j1s3" />
+
+    <TextView
+        android:id="@+id/joueur1name"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:text="Joueur1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/joueur2name"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Joueur2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joueur1name" />
+
+
+</android.support.constraint.ConstraintLayout>
